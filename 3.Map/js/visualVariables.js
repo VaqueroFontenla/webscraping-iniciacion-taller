@@ -6,7 +6,7 @@
         // If GeoJSON files are not on the same domain as your website, a CORS enabled server
         // or a proxy is required.
         const url =
-            "http://localhost:8081/data/.housting-distrito-retiro-pacifico.geojson";
+            "http://127.0.1.1:3000//";
 
         // Paste the url into a browser's address bar to download and view the attributes
         // in the GeoJSON file. These attributes include:
