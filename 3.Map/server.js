@@ -3,10 +3,11 @@
 // Llamamos al módulo Express y lo asignamos a app
 const express = require("express");
 const app = express();
+//Método de File-System que accede a un fichero para su lectura y nos entrega el contenido en forma de buffer o en forma de cadena.
 const fs = require('fs');
 
-
-const url = './data/housting-distrito-retiro-pacifico.json';
+// Parsearmos nuestros datos 
+const url = './data/housting-distrito-retiro-pacifico.geojson';
 const data = fs.readFileSync(url, 'utf-8');
 let geoData = JSON.parse(data);
 

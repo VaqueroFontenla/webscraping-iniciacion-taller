@@ -34,6 +34,6 @@ https://medium.com/swlh/an-introduction-to-web-scraping-with-puppeteer-3d35a51fd
   - https://www.scraperapi.com/
 
 ### Mapa
-- https://github.com/koopjs/koop-provider-sample
+- http://geojsonlint.com/
 - https://developers.arcgis.com/javascript/
 - https://esri.github.io/esri-leaflet/
