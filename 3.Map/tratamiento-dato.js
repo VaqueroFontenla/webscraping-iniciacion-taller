@@ -45,7 +45,7 @@ const fromArrayToGeoJSON = (arr) => {
 }
 
 //console.log(JSON.stringify(fromArrayToGeoJSON(data)));
-fs.writeFile('./data/.housting-distrito-retiro-pacifico.geojson', JSON.stringify(fromArrayToGeoJSON(data)), (err) => {
+fs.writeFile('./data/housting-distrito-retiro-pacifico.geojson', JSON.stringify(fromArrayToGeoJSON(data)), (err) => {
     if (err) console.log(err);
     console.log("Housting: Successfully Written to File.");
 });

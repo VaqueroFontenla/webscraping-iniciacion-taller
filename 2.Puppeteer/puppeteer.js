@@ -49,8 +49,8 @@ let url = 'https://www.idealista.com/alquiler-viviendas/madrid/retiro/pacifico/'
                     let houseJson = {};
                     try {
                         houseJson.descripcion = house.querySelector('#main-content > section > article > div > a').innerText;
-                        houseJson.id = house.querySelector('#main-content > section > article > div > a').href.slice(35, -1);;
-                        houseJson.precio = house.querySelector('#main-content > section > article > div > div.row.price-row.clearfix > span').innerText;
+                        houseJson.id = house.querySelector('#main-content > section > article > div > a').href.slice(35, -1);
+                        houseJson.precio  = parseInt((house.querySelector('#main-content > section > article > div > div.row.price-row.clearfix > span').innerText).substr(0,5).replace(".",""));
                         houseJson.habitaciones = house.querySelector('#main-content > section > article > div > span:nth-child(4)').innerText;
                         houseJson.metros = house.querySelector('#main-content > section > article > div > span:nth-child(5)').innerText;
                     } catch (exception) {
