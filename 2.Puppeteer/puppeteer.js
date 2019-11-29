@@ -66,6 +66,8 @@ let url = 'https://www.idealista.com/alquiler-viviendas/madrid/retiro/pacifico/'
             await page.goto(pageUrl);
             console.log(data);
         }
+
+        
         let urlCoords = `${url}/mapa-google`;
         await page.goto(urlCoords);
         await page.click('#map-zoom-high-button');

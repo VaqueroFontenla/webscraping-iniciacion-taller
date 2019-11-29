@@ -3,6 +3,8 @@ const coordinates = require('./data/coordenadas-distrito-retiro-pacifico.json');
 const fs = require('fs');
 
 //Relacionar dos arrays en función de una propiedad de cada uno de los objetos que tiene en común:
+
+//Asignarle a cada objeto de array un id
 const COORDS_BY_ID = coordinates.reduce((old, cur, i, arr) => {
     old[cur.id] = cur;
     return old;
