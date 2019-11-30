@@ -52,7 +52,7 @@ require([
     });
 
     const map = new Map({
-        basemap: "gray",
+        basemap: "satellite",
         layers: [geojsonLayer]
     });
 

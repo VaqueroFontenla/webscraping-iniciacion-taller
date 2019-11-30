@@ -11,10 +11,10 @@ require([
         "http://localhost:3000//";
 
     // Ventana de información que se activará al seleccionar cada piso
-    const template = {
+    /*const template = {
         title: "Pisos en Madrid",
         content: "{descripcion} </br> {precio} € / {habitaciones} habitaciones"
-    };
+    };*/
 
     const renderer = {
         type: "heatmap",
@@ -49,7 +49,7 @@ require([
         url: url,
         title: "Precio pisos en Madrid",
         copyright: "Loretus S.A",
-        popupTemplate: template,
+        //popupTemplate: template,
         renderer: renderer
     });
 
